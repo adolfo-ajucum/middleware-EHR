@@ -13,10 +13,11 @@ public class LoincLookupController {
     private LoincLookupService loincLookupService;
 
 
-    @CrossOrigin(origins = "http://localhost:5173")
+    @CrossOrigin(origins = {"http://localhost:5173", "http:localhost:3000"})
     @GetMapping("/lookup-loinc")
     public String lookupLoincCode(@RequestParam String loincCode) {
         return loincLookupService.fetchLoincData(loincCode);
-
     }
+
+
 }
