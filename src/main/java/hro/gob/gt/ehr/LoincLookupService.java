@@ -12,7 +12,7 @@ import java.net.URISyntaxException;
 @Service
 public class LoincLookupService {
 
-    private static final String BASE_URL = "http://192.168.7.119/fhir/CodeSystem/$lookup?system=http://loinc.org&code=";
+    private static final String BASE_URL = "http://localhost/fhir/CodeSystem/$lookup?system=http://loinc.org&code=";
 
     @Autowired
     private RestTemplate restTemplate;
